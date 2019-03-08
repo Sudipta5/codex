@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Java Programming</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/highlight.pack.js"></script>
+<link rel="stylesheet" href="styles/monokai-sublime.css">
+<script>hljs.initHighlightingOnLoad();</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class ="header">
+		<h1>CodeX Academy</h1>
+		<p>Java Lessons</p>
+	</div>
+
+	<div class="navbar">
+	  <a href="../home.html#home">Home</a>
+		<div class="dropdown">
+		<button class="dropbtn">C Programming
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="c.html#1">What is C?</a>
+			<a href="c.html#2">Printf and Scanf</a>
+			<a href="c.html#3">Control Statements</a>
+			<a href="c.html#4">C Functions</a>
+			</div>
+		</div>
+		<div class="dropdown">
+		<button class="dropbtn">C ++ 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="cplusplus.html#1">What is C++?</a>
+			<a href="cplusplus.html#2">OOP</a>
+			<a href="cplusplus.html#3">C++ cout, cin, endl</a>
+			<a href="cplusplus.html#4">C++ Array</a>
+			<a href="cplusplus.html#4">C++ Pointer</a>
+			</div>
+		</div>
+		<div class="dropdown">
+		<button class="dropbtn">Java 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="#1">What is Java?</a>
+			<a href="#2">Java Inheritance</a>
+			<a href="#3">Java Polymorphism</a>
+			<a href="#4">Java Abstraction</a>
+			<a href="#5">Java Encapsulation</a>
+			</div>
+		</div>
+	</div>		
+	<div class="main">
+		<p><h2><a name="1">What is Java</a></h2><br>
+		Java is a programming language and a platform.<br>
+		Java is a high level, robust, object-oriented and secure programming language.<br>
+		Platform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform.<br><br>
+		<h4>Java Example</h4><br>
+		Let's have a quick look at Java programming example. A detailed description of hello Java example is available in next page.<br>
+			<pre>
+				<code class="java">
+						class Simple{
+						
+						public static void main(String args[]){
+						
+							System.out.println("Hello Java"); 
+							} 
+						}
+				</code>
+			</pre>
+		<h2><a name="2">Java Inheritance</a></h2><br>
+		Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs (Object Oriented programming system).<br>
+		The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.<br>
+		Inheritance represents the IS-A relationship which is also known as a parent-child relationship.<br>
+		<h4>The syntax of Java Inheritance</h4><br>
+		
+			<pre>
+				<code class="java">
+						class Subclass-name extends Superclass-name {
+						
+						//methods and fields 
+
+						}
+				</code>
+			</pre>
+		The extends keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality.<br>
+		In the terminology of Java, a class which is inherited is called a parent or superclass, and the new class is called child or subclass.<br>
+		<h4>Java Inheritance Example</h4>
+		As displayed in the above figure, Programmer is the subclass and Employee is the superclass.<br>
+		The relationship between the two classes is Programmer IS-A Employee. It means that Programmer is a type of Employee.
+		
+			<pre>
+				<code class="java">
+					class Employee { 
+						float salary=40000; 
+					} 
+					class Programmer extends Employee { 
+						int bonus=10000;
+						public static void main(String args[]){ 
+							Programmer p=new Programmer();
+							System.out.println("Programmer salary is:"+p.salary); 
+							System.out.println("Bonus of Programmer is:"+p.bonus); 
+						} 
+					}
+				</code>
+			</pre>
+		<h2><a name="3">Java Polymorphism</a></h2>
+		Polymorphism in Java is a concept by which we can perform a single action in different ways. Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" means forms. So polymorphism means many forms.<br><br>
+		There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.<br><br>
+		If you overload a static method in Java, it is the example of compile time polymorphism. Here, we will focus on runtime polymorphism in java.<br><br>
+		
+		<h3>Method Overloading in Java</h3>
+		If a class has multiple methods having same name but different in parameters, it is known as Method Overloading. If we have to perform only one operation, having same name of the methods increases the readability of the program. Suppose you have to perform addition of the given numbers but there can be any number of arguments, if you write the method such as a(int,int) for two parameters, and b(int,int,int) for three parameters then it may be difficult for you as well as other programmers to understand the behavior of the method because its name differs. So, we perform method overloading to figure out the program quickly.<br><br>
+		<h4>Method Overloading: changing no. of arguments</h4>
+		In this example, we have created two methods, first add() method performs addition of two numbers and second add method performs addition of three numbers.<br><br>
+		In this example, we are creating static methods so that we don't need to create instance for calling methods.
+			<pre>
+				<code class="java">
+					class Adder { 
+						static int add(int a,int b) {
+							return a+b;
+						}
+						static int add(int a,int b,int c) {
+							return a+b+c;
+						}
+					} 
+					class TestOverloading1 {
+						public static void main(String[] args) {
+							System.out.println(Adder.add(11,11)); 
+							System.out.println(Adder.add(11,11,11)); 
+						}
+					}
+				</code>
+			</pre>
+		<h3>Method overriding in Java</h3>
+		Declaring a method in sub class which is already present in parent class is known as method overriding.<br>
+		Overriding is done so that a child class can give its own implementation to a method which is already provided by the parent class. In this case the method in parent class is called overridden method and the method in child class is called overriding method.<br>
+		In this guide, we will see what is method overriding in Java and why we use it.<br>
+		<h4>Method Overriding Example</h4>
+		Lets take a simple example to understand this. We have two classes: A child class Boy and a parent class Human. The Boy class extends Human class. Both the classes have a common method void eat(). Boy class is giving its own implementation to the eat() method or in other words it is overriding the eat() method.<br><br>
+		The purpose of Method Overriding is clear here. Child class wants to give its own implementation so that when it calls this method, it prints Boy is eating instead of Human is eating.<br>
+			<pre>
+				<code class="java">
+					class Human{
+					   //Overridden method
+						public void eat() {
+							System.out.println("Human is eating");
+						}
+					}
+					class Boy extends Human {
+						//Overriding method
+						public void eat() {
+							System.out.println("Boy is eating");
+						}
+						public static void main( String args[]) {
+							Boy obj = new Boy();
+							//This will call the child class version of eat()
+							obj.eat();
+					   }
+					}
+				</code>
+			</pre>
+		<h2><a name="4">Java Abstraction</a></h2>
+		<b>Abstraction</b> is a process of hiding the implementation details and showing only functionality to the user. Another way, it shows only essential things to the user and hides the internal details, for example, sending SMS where you type the text and send the message.<br><br>
+		You don't know the internal processing about the message delivery. Abstraction lets you focus on what the object does instead of how it does it.<br><br>
+		Ways to achieve Abstraction There are two ways to achieve abstraction in java Abstract class (0 to 100%) Interface (100%)<br>
+		<h4>Example of Abstract class that has an abstract method</h4>
+		In this example, Bike is an abstract class that contains only one abstract method run. Its implementation is provided by the Honda class.<br>
+			<pre>
+				<code class="java">
+						abstract class Bike { 
+							abstract void run();
+						} 
+						class Honda4 extends Bike {
+							void run() {
+								System.out.println("running safely");
+							}
+							public static void main(String args[]) { 
+								Bike obj = new Honda4();
+								obj.run(); 
+							} 
+						}
+				</code>
+			</pre>
+		<h2><a name="5">Java Encapsulation</a></h2>
+		<b>Encapsulation</b> in Java is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.<br><br>
+		We can create a fully encapsulated class in Java by making all the data members of the class private. Now we can use setter and getter methods to set and get the data in it.<br>
+		The Java Bean class is the example of a fully encapsulated class.<br><br>
+		<h3>Advantage of Encapsulation in Java</h3>
+		By providing only a setter or getter method, you can make the class read-only or write-only. In other words, you can skip the getter or setter methods.<br><br>
+		It provides you the control over the data. Suppose you want to set the value of id which should be greater than 100 only, you can write the logic inside the setter method. You can write the logic not to store the negative numbers in the setter methods.<br><br>
+		It is a way to achieve data hiding in Java because other class will not be able to access the data through the private data members.<br><br>
+		The encapsulate class is easy to test. So, it is better for unit testing.<br><br>
+		The standard IDE's are providing the facility to generate the getters and setters. So, it is easy and fast to create an encapsulated class in Java.<br>
+		<h4>Simple Example of Encapsulation in Java</h4>
+		Let's see the simple example of encapsulation that has only one field with its setter and getter methods.<br>
+		
+		File: Student.java
+		<pre>
+			<code class="java">
+				//A Java class which is a fully encapsulated class. 
+				//It has a private data member and getter and setter methods. 
+				package com.javatpoint; 
+				public class Student { 
+					//private data member
+					private String name; 
+					//getter method for name 
+					public String getName() { 
+						return name;
+					}
+					//setter method for name 
+					public void setName(String name) { 
+						this.name=name
+					}
+				}
+			</code>
+		</pre>
+		File: Test.java
+		<pre>
+			<code class="java">
+					//A Java class to test the encapsulated class. 
+					package com.javatpoint; 
+					class Test { 
+						public static void main(String[] args) { 
+							//creating instance of the encapsulated class 
+							Student s=new Student(); 
+							//setting value in the name member
+							s.setName("vijay"); 
+							//getting value of the name member 
+							System.out.println(s.getName()); 
+						}
+					}
+			</code>
+		</pre>
+		</p>
+	</div>
+</body>
+</html>

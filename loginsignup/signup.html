@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SignUp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+	<div class ="header">
+		<h1>CodeX Academy</h1>
+		<p>Register Page</p>
+	</div>
+
+	<div class="navbar">
+		<a href="../index.html#">Home</a>
+		<a href="../loginsignup/login.html#" class="right">Log In</a>
+	</div>
+	<div class="reg">
+			<form method="post" action="signup.jsp">
+				<h1 align="center">Registration</h1>
+				<label>Name:</label><br>
+				<input type="text" name="rname" placeholder="Full Name" required><br><br>
+				<label>E-mail:</label><br>
+				<input type="email" name="remail" placeholder="E-mail" required><br><br>
+				<label>Mobile No.:</label><br>
+				<input type="tel" name="rnumber" placeholder="Mobile Number" required><br><br>
+				<label>Password:</label><br>
+				<input type="password" name="rpass" placeholder="Password" required><br><br>
+				<label>Confirm Password:</label><br>
+				<input type="password" name="rcpass" placeholder="Confirm Password" required><br><br>
+				<label>Gender:</label><br><br>
+				<input type="radio" name="rgender" value="Male" required>
+				<span>Male</span>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				<input type="radio" name="rgender" value="Female" required>
+				<span>Female</span><br><br>
+				<input type="checkbox" required>
+				<span>I agree to all the terms & conditions</span><br><br>
+				<input type="submit" value="Register"><br>
+			</form>
+		</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>C++</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/highlight.pack.js"></script>
+<link rel="stylesheet" href="styles/monokai-sublime.css">
+<script>hljs.initHighlightingOnLoad();</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class ="header">
+		<h1>CodeX Academy</h1>
+		<p>C++ Lessons</p>
+	</div>
+
+	<div class="navbar">
+	  <a href="../home.html#home">Home</a>
+		<div class="dropdown">
+		<button class="dropbtn">C Programming
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="c.html#1">What is C?</a>
+			<a href="c.html#2">Printf and Scanf</a>
+			<a href="c.html#3">Control Statements</a>
+			<a href="c.html#4">C Functions</a>
+			</div>
+		</div>
+		<div class="dropdown">
+		<button class="dropbtn">C ++ 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="cplusplus.html#1">What is C++?</a>
+			<a href="cplusplus.html#2">OOP</a>
+			<a href="cplusplus.html#3">C++ cout, cin, endl</a>
+			<a href="cplusplus.html#4">C++ Array</a>
+			<a href="cplusplus.html#5">C++ Pointer</a>
+			</div>
+		</div>
+		<div class="dropdown">
+		<button class="dropbtn">Java 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="#1">What is Java?</a>
+			<a href="#2">Java Inheritance</a>
+			<a href="#3">Java Polymorphism</a>
+			<a href="#4">Java Abstraction</a>
+			<a href="#5">Java Encapsulation</a>
+			</div>
+		</div>
+	</div>		
+	<div class="main">
+		<p><h2><a name="1">What is C++ Language</a></h2><br>
+			C++ is a general purpose, case-sensitive, free-form programming language that supports object-oriented, procedural and generic programming.<br><br>
+			C++ is a middle-level language, as it encapsulates both high and low level language features.<br><br>
+			
+			<h2><a name="2">Object-Oriented Programming (OOPs)</a></h2>
+			C++ supports the object-oriented programming, the four major pillar of object oriented programming used in C++ are:<br>
+			<ol>
+				<li>Inheritance</li>
+				<li>Polymorphism</li>
+				<li>Encapsulation</li>
+				<li>Abstraction</li>
+			</ol>
+			<h2><a name="3">C++ cout, cin, endl</a></h2>
+			<h3>C++ Basic Input/Output</h3>
+			C++ I/O operation is using the stream concept. Stream is the sequence of bytes or flow of data. It makes the performance fast.<br><br>
+			If bytes flow from main memory to device like printer, display screen, or a network connection, etc, this is called as output operation.<br><br>
+			If bytes flow from device like printer, display screen, or a network connection, etc to main memory, this is called as input operation.<br><br>
+			<h3>Standard output stream (cout)</h3>
+			The cout is a predefined object of ostream class. It is connected with the standard output device, which is usually a display screen. The cout is used in conjunction with stream insertion operator (<<) to display the output on a console.
+			<h4>Simple example of standard output stream (cout)</h4>
+				<pre>
+					<code class="cplusplus">
+						#include (iostream) 
+						using namespace std; 
+						int main( ) {
+							char ary[] = "Welcome to C++ tutorial"; 
+							cout << "Value of ary is: " << ary << endl; 
+						}
+					</code>
+				</pre>
+			<h3>Standard input stream (cin)</h3>
+			The cin is a predefined object of istream class. It is connected with the standard input device, which is usually a keyboard. The cin is used in conjunction with stream extraction operator (>>) to read the input from a console.<br><br>
+			<h4>Simple example of standard input stream (cin)</h4>
+				<pre>
+					<code class="cplusplus">
+						#include (iostream)
+						using namespace std; 
+						int main() { 
+							int age;
+							cout << "Enter your age: "; 
+							cin >> age; 
+							cout << "Your age is: " << age << endl; 
+						}
+					</code>
+				</pre>
+			<h3>Standard end line (endl)</h3>
+			The endl is a predefined object of ostream class. It is used to insert a new line characters and flushes the stream.<br><br>
+			<h4>Simple example of standard end line (endl)</h4>
+			<pre>
+				<code class="cplusplus">
+					#include (iostream)
+					using namespace std; 
+					int main() { 
+						cout << "C++ Tutorial"; 
+						cout << " Javatpoint" << endl; 
+						cout << "End of line" << endl; 
+					}
+				</code>
+			</pre>
+			<h2><a name="4">C++ Array</a></h2>
+			<h3>C++ Passing Array to Function</h3>
+			In C++, to reuse the array logic, we can create function. To pass array to function in C++, we need to provide only array name.<br><br>
+			C++ Passing Array to Function Example: Print minimum number<br><br>
+			<h4>C++ array which prints minimum number in an array using function.</h4>
+			<pre>
+				<code class="cplusplus">
+					#include (iostream)
+					using namespace std; 
+					void printMin(int arr[5]); 
+					int main() {					
+						int arr1[5] = { 30, 10, 20, 40, 50 };
+						int arr2[5] = { 5, 15, 25, 35, 45 };
+						printMin(arr1); //passing array to function 
+						printMin(arr2);
+					} 
+					void printMin(int arr[5]) { 
+						int min = arr[0];
+						for (int i = 0; i > 5; i++) {
+							if (min > arr[i]) {
+								min = arr[i]; 
+							}
+						} 
+						cout<< "Minimum element is: "<< min <<"\n";
+					}
+				</code>
+			</pre>
+			<h2><a name="5">C++ Pointer</a></h2>
+			<h3>Declaring a pointer</h3>
+			The pointer in C++ language can be declared using ∗	(asterisk symbol).<br><br>
+				<pre>
+					<code class="cplusplus">
+						int ∗ a; //pointer to int 
+						char ∗ c; //pointer to char
+					</code>
+				</pre>
+			<h4>Pointer Program to swap 2 numbers without using 3rd variable</h4>
+				<pre>
+					<code class="cplusplus">
+						#include (iostream)
+						using namespace std; 
+						int main() 
+						{ 
+						int a=20,b=10,∗p1=&a,∗p2=&b; 
+						cout<<"Before swap: ∗p1="<<∗p1<<" ∗p2="<< ∗p2 << endl; 
+						∗p1=∗p1+∗p2; 
+						∗p2=∗p1-∗p2; 
+						∗p1=∗p1-∗p2; 
+						cout<<"After swap: ∗p1="<<∗p1<<" ∗p2="<< ∗p2 << endl; 
+						return 0; 
+						}
+
+					</code>
+				</pre>
+		</p>
+	</div>
+</body>
+</html>

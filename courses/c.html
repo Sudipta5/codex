@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>C Programming</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/highlight.pack.js"></script>
+<link rel="stylesheet" href="styles/xt256.css">
+<script>hljs.initHighlightingOnLoad();</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class ="header">
+		<h1>CodeX Academy</h1>
+		<p>C Programming Lessons</p>
+	</div>
+
+	<div class="navbar">
+	  <a href="../home.html#home">Home</a>
+		<div class="dropdown">
+		<button class="dropbtn">C Programming
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="#1">What is C?</a>
+			<a href="#2">Printf and Scanf</a>
+			<a href="#3">Control Statements</a>
+			<a href="#4">C Functions</a>
+			</div>
+		</div>
+		<div class="dropdown">
+		<button class="dropbtn">C ++ 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="cplusplus.html#1">What is C++?</a>
+			<a href="cplusplus.html#2">OOP</a>
+			<a href="cplusplus.html#3">C++ cout, cin, endl</a>
+			<a href="cplusplus.html#4">C++ Array</a>
+			<a href="cplusplus.html#5">C++ Pointer</a>
+			</div>
+		</div>
+		<div class="dropdown">
+		<button class="dropbtn">Java 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content">
+			<a href="java.html#1">What is Java?</a>
+			<a href="java.html#2">Java Inheritance</a>
+			<a href="java.html#3">Java Polymorphism</a>
+			<a href="java.html#4">Java Abstraction</a>
+			<a href="java.html#5">Java Encapsulation</a>
+			</div>
+		</div>
+	</div>		
+	<div class="main">
+		<h2><a name="1">What is C Language</a></h2><br>
+		<p>C language Tutorial with programming approach for beginners and professionals, helps you to understand the C language tutorial easily. Our C tutorial explains each topic with programs.<br><br>
+
+		The C Language is developed for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc.<br>
+
+		C programming is considered as the base for other programming languages, that is why it is known as mother language.<br><br>
+
+		It can be defined by the following ways:<br><br>
+		<ol>
+			<li>Mother language</li>
+			<li>System programming language</li>
+			<li>Procedure-oriented programming language</li>
+			<li>Structured programming language<li>
+			<li>Mid-level programming language</li>
+		</ol>
+		<br><br><br>
+		<h4>Example C Program</h4><br><br>
+		In this tutorial, all C programs are given with C compiler so that you can quickly change the C program code.
+		<br><br>
+		File: main.c<br>
+		
+			<pre>
+				<code class="objectivec">
+				
+						#include (stdio.h)
+							int main() { 
+							printf("Hello C Programming\n"); 
+							return 0; 
+						}
+				</code>
+			</pre>
+			
+		<h2><a name="2">Printf() and Scanf() in C</a></h2><br>
+		The printf() and scanf() functions are used for input and output in C language. Both functions are inbuilt library functions, defined in stdio.h (header file).<br><br><br>
+				
+		<h3>Printf() function</h3><br><br>
+		The printf() function is used for output. It prints the given statement to the console.<br>
+		The syntax of printf() function is given below:<br>
+			<pre>
+				<code class="objectivec">
+						printf("format string",argument_list);
+				</code>
+			</pre>
+		The format string can be %d (integer), %c (character), %s (string), %f (float) etc.<br><br><br>
+		<h3>scanf() function</h3><br><br>
+		The scanf() function is used for input. It reads the input data from the console.<br><br>
+			<pre>
+				<code class="objectivec">
+						scanf("format string",argument_list);
+				</code>
+			</pre>
+		<h4>Example Program to print sum of 2 numbers:</h4><br><br>
+		Let's see a simple Example of input and output in C language that prints addition of 2 numbers.<br><br>
+			<pre>
+				<code class="objectivec">
+						#include(stdio.h)
+						int main() {
+							int x=0,y=0,result=0;
+							printf("enter first number:");  
+							scanf("%d",&x);
+							printf("enter second number:");
+							scanf("%d",&y);
+							result=x+y;
+							printf("sum of 2 numbers:%d ",result);
+							return 0;
+						}
+				</code>
+			</pre>
+		<br>
+		<h2><a name="3">C Control Statements</a></h2>
+		<h3>C if else Statement</h3>
+		<br>
+		The if-else statement in C is used to perform the operations based on some specific condition. The operations specified in if block are executed if and only if the given condition is true.<br>
+		<br>
+		There are the following variants of if statement in C language.<br><br>
+		<ul>
+			<li>If statement</li>
+			<li>If-else statement</li>
+			<li>f else-if ladder</li>
+			<li>Nested if</li>
+		</ul>
+		<br>
+		<h4>Example Program to find the largest number of the three.</h4><br>
+		<br>
+			<pre>
+				<code class="objectivec">
+						#include (stdio.h)
+						int main(){
+							int a, b, c;
+							printf("Enter three numbers?");
+							scanf("%d %d %d",&a,&b,&c);
+							if(a>b && a>c) {
+								printf("%d is largest",a);
+							}
+							if(b>a  && b > c) {
+								printf("%d is largest",b); 
+							}
+							if(c>a && c>b) {
+								printf("%d is largest",c);
+							}
+							if(a == b && a == c) {
+								printf("All are equal");
+							}
+						}
+				</code>
+			</pre>
+		<br>
+		<h3>C Switch Statement</h3>
+		The switch statement in C is an alternate to if-else-if ladder statement which allows us to execute multiple operations for the different possibles values of a single variable called switch variable. Here, We can define various statements in the multiple cases for the different values of a single variable.
+		<br>
+		<h4>Functioning of switch case statement</h4><br>
+			<pre>
+				<code class="objectivec">
+						#include(stdio.h)  
+						int main() { 
+							int number=0;
+							printf("enter a number:");   
+							scanf("%d",&number);
+							switch(number) {
+								case 10:
+								printf("number is equals to 10");
+								break;
+								case 50:
+								printf("number is equal to 50");
+								break;
+								case 100:
+								printf("number is equal to 100");
+								break;
+								default:
+								printf("number is not equal to 10, 50 or 100");
+							}
+							return 0;
+						}
+				</code>
+			</pre>
+			
+		<h2><a name="4">C Functions</a></h2>
+		<h3>What is Function</h3>
+		In c, we can divide a large program into the basic building blocks known as function. The function contains the set of programming statements enclosed by {}. A function can be called multiple times to provide reusability and modularity to the C program. In other words, we can say that the collection of functions creates a program. The function is also known as procedure or subroutine in other programming languages.
+		<h3>Advantage of functions in C</h3><br>
+		There are the following advantages of C functions.<br>
+		<ol>
+			<li>By using functions, we can avoid rewriting same logic/code again and again in a program.</li>
+			<li>We can call C functions any number of times in a program and from any place in a program.</li>
+			<li>We can track a large C program easily when it is divided into multiple functions.</li>
+			<li>Reusability is the main achievement of C functions.</li>
+			<li>However, Function calling is always a overhead in a C program.</li>
+			</ol>
+		<h3>Recursion in C</h3>
+		Recursion is the process which comes into existence when a function calls a copy of itself to work on a smaller problem. Any function which calls itself is called recursive function, and such function calls are called recursive calls. Recursion involves several numbers of recursive calls. However, it is important to impose a termination condition of recursion. Recursion code is shorter than iterative code however it is difficult to understand.<br>
+		<br>
+		Recursion cannot be applied to all the problem, but it is more useful for the tasks that can be defined in terms of similar subtasks. For Example..., recursion may be applied to sorting, searching, and traversal problems.<br>
+		<br>
+		Generally, iterative solutions are more efficient than recursion since function call is always overhead. Any problem that can be solved recursively, can also be solved iteratively. However, some problems are best suited to be solved by the recursion, for Example..., tower of Hanoi, Fibonacci series, factorial finding, etc.<br>
+		<br>
+		Recursion is used to calculate the factorial of a number.<br>
+		<h4>Recursion in C Example</h4>
+		<br>
+			<pre>
+				<code class="objectivec">
+					#include (stdio.h)
+					int fact (int);
+					int main(){
+						int n,f;
+						printf("Enter the number whose factorial you want to calculate?");
+						scanf("%d",&n);
+						f = fact(n);
+						printf("factorial = %d",f);
+					}
+					int fact(int n){
+						if (n==0){
+							return 0;
+						}
+						else if ( n == 1){
+							return 1;
+						}
+						else{
+							return n*fact(n-1);
+						}
+					}
+				</code>
+			</pre>
+		</p>
+	</div>
+</body>
+</html>
