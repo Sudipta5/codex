@@ -1,0 +1,50 @@
+ *{
+	 margin: 0;
+	 padding: 0;
+ }
+ body{
+	 background-color: black;
+	 background-image: url(../);
+	 background-repeat: no-repeat;
+	 background-size: 100% 1000px;
+ }
+ .reg{
+	 max-width: 350px;
+	 border-radius: 20px;
+	 margin: auto;
+	 background: #333;
+	 box-sizing: border-box;
+	 padding: 40px;
+	 color: #fff;
+	 margin-top:20px;
+ }
+ input[type=text],input[type=password], [type=email], [type=tel], textarea{
+	 width: 100%;
+	 box-sizing: border-box;
+	 padding:12px 5px;
+	 background: rgba(0,0,0,1);
+	 outline:none;
+	 border:none;
+	 border-bottom: 1px dotted #fff;
+	 color: white;
+	 border-radius: 5px;
+	 margin: 5px;
+	 font-weight: bold;
+ }
+ input[type=submit]{
+	 width: 100%;
+	 box-sizing: border-box;
+	 padding: 10px 0;
+	 margin-top:30px;
+	 outline: none;
+	 border: none;
+	 background: #fff;
+	 opacity: 0.7;
+	 border-radius: 20px;
+	 font-size: 20px;
+	 color: #000;
+ }
+ input[type=submit]:hover{
+	 background: DodgerBlue ;
+	 opacity: 0.7;
+ }
