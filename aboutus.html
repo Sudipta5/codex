@@ -1,24 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/jpg" href="icon.png">
 <title>AboutUs</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+         body
+    {
+    background-color: #ffff99;
+    background-image: url(gallery/img/009.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    {
+  box-sizing: content-box;
+}
+
+.columns {
+  float: center;
+  width: 60%;
+  padding: 8px;
+  margin-left: 20%;
+  color: black;
+}
+.box {
+  list-style-type: none;
+  border: 1px solid #005ce6;
+  border-radius: 50px;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+   
+   
+}
+
+.box:hover {
+  box-shadow: 0 20px 30px 0 rgba(0,0,0,0.2);
+  animation: shake 0.5s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+    
+    </style>
 </head>
 <body>
 	<div class ="header">
-		<h1>CodeX Academy</h1>
-		<p>About Us</p>
+		<b><font size="9">C</font><font size="6">ode</font><font size="9">X</font><font size="6">.in</font></b><br>
+		 <font size="3" color="white"><i>The Ultimate Search for Online Programming Cources</i></font><hr>
 	</div>
 
 	<div class="navbar">
 		<a href="index.html">Home</a>
 		<a href="loginsignup/login.html#" class="right">Log In</a>
 	</div>
-	<div class="about">
-			
-	</div>
+   <hr>
+	<div class="main">
+        <center><h1><font color="blue">About Us</font></h1></center></div>
+        
+        <div class="columns">
+     <ul class="box"><li><center><h3><em><b><font color="black">Hi, We have written and developed this site so that students may learn computer Programming easily.<br>
+We are committed to provide easy and in-depth tutorials on various programming languages.<br>
+No one is perfect in this world and nothing is eternally best.<br>
+But we can try to be better.<br>
+         We hope it will help you a lot.</font></b></em></h3></center></li></ul>
+</div>
+    <br>
+    
+    <center><h1><font color="blue">We Are</font></h1></center>
+    <div class="columns">
+    <ul class="box">
+        <center>
+            <h4> Sudipta Mondal | Roll - 2</h4>
+            <h4>Abhipsa Bala | Roll - 10</h4>
+            <h4>Tanmay Sarkar | Roll - 11</h4>
+            <h4>Devjeet Ghosh | Roll - 17</h4></center></ul></div>
+        
+		<br><br><br><hr>
+    <footer><font color="black" size="2"><i><b>  <center>Copyright 2019  |  Designed By Abhipsa Bala  |  Roll 10   |   Java Oracle </center></b></i></font></footer><hr><br>
+				
+	
 </body>
 </html>

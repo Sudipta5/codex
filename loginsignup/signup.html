@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/jpg" href="icon.png">
 <title>SignUp</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="css/signup.css">
+<style>
+	body
+		{
+		background-color: #000000;
+		background-image: url(../gallery/img/1.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+</style>
 </head>
 <body>
 	<div class ="header">
-		<h1>CodeX Academy</h1>
-		<p>Register Page</p>
+		<b><font size="9">C</font><font size="6">ode</font><font size="9">X</font><font size="6">.in</font></b><br>
+		 <font size="3" color="white"><i>The Ultimate Search for Online Programming Cources</i></font>
+        <h4><p>Register Page</p></h4>
 	</div>
 
 	<div class="navbar">
-		<a href="../index.html#">Home</a>
-		<a href="../loginsignup/login.html#" class="right">Log In</a>
+		<a href="../index.html#" title="Go Back Home !">Home</a>
+		<a href="../loginsignup/login.html#" class="right" title="Already Have an Account then Log In !">Log In</a>
 	</div>
 	<div class="reg">
 			<form method="post" action="signup.jsp">
-				<h1 align="center">Registration</h1>
+                <h2 align="center">Registration</h2>
 				<label>Name:</label><br>
 				<input type="text" name="rname" placeholder="Full Name" required><br><br>
 				<label>E-mail:</label><br>
@@ -38,8 +51,13 @@
 				<span>Female</span><br><br>
 				<input type="checkbox" required>
 				<span>I agree to all the terms & conditions</span><br><br>
-				<input type="submit" value="Register"><br>
+				<input type="submit" value="Register" title="Register Here !"><br>
 			</form>
 		</div>
+    
+    <br>
+     <center>	
+         <hr><br><footer><font color="white" size="2"><i><b>Copyright  2019  |  Designed  By  Sudipta  Mondal  |  Roll  2   |   Java  Oracle </b></i></font></footer><br><hr></center><br>
+    
 </body>
 </html>

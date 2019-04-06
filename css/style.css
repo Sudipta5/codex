@@ -72,7 +72,7 @@ body {
 .header {
 	padding: 5px;
 	text-align: center;
-	background: #4d94ff;
+	background: #4d94ff;		/*#4d94ff*/
 	color: white;
 }
 .dropdown:hover .dropdown-content {

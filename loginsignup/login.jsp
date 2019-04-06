@@ -2,20 +2,22 @@
 
 <%
 	String email=request.getParameter("remail");
-	String password=request.getParameter("rpass");
-	session.setAttribute("email", email);
-	String query="select * from REGISTRATION where email=? and password=?";
+	String pass=request.getParameter("rpass");
+	String query="select * from REGISTRATION where email=? and pass=?";
 	
 	try{
-		Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","hr","hr");
+		Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","hr","hr");
 		PreparedStatement ps= conn.prepareStatement(query);
 		ps.setString(1,email);
-		ps.setString(2,password);
+		ps.setString(2,pass);
 		
 		ResultSet rs=ps.executeQuery();
 		
 		if(rs.next()){
-			response.sendRedirect("../home.html");	
+			
+			session = request.getSession();
+			session.setAttribute("eid", email);
+			response.sendRedirect("../home.jsp");	
 		}
 		else{
 			out.print("Invalid password or username.<br> <a href=login.html>Try Again</a>");

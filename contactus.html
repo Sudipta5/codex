@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/jpg" href="icon.png">
 <title>Contact Us</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/contactus.css">
+<style>
+	body
+		{
+		background-color: #ffff99;
+		background-image: url(gallery/img/1.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+</style>
 </head>
 <body>
 	<div class ="header">
-		<h1>CodeX Academy</h1>
-		<p>Mail Us about anything</p>
+		<b><font size="9">C</font><font size="6">ode</font><font size="9">X</font><font size="6">.in</font></b><br>
+		 <font size="3" color="white"><i>The Ultimate Search for Online Programming Cources</i></font>
+        <p><font color="white" size="4"><b>Mail Us about anything</b></font></p>
 	</div>
 
 	<div class="navbar">
@@ -19,16 +32,19 @@
 		<a href="loginsignup/login.html#" class="right">Log In</a>
 	</div>
 	<div class="reg">
-			<form method="post" action="signup.jsp">
-				<h1 align="center">Mail</h1>
+			<form method="post" action="mailto:nielitjavaoracle@gmail.com" enctype="text/plain">
+				<h1 align="center">Mail Us</h1>
 				<label>Name:</label><br>
 				<input type="text" name="rname" placeholder="Full Name" required><br><br>
 				<label>E-mail:</label><br>
 				<input type="email" name="remail" placeholder="E-mail" required><br><br>
 				<label for="subject">Subject</label><br>
-				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
 				<input type="submit" value="Mail Us"><br>
 			</form>
 	</div>
+    
+    <center>	
+        <br><hr><br><footer><font color="white" size="2"><i><b>Copyright  2019  |  Designed  By  Sudipta  Mondal  |  Roll  2   |   Java  Oracle </b></i></font></footer><br><hr></center>
 </body>
 </html>

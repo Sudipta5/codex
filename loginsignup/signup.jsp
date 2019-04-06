@@ -9,7 +9,7 @@ String pass1=request.getParameter("rcpass");
 
 if(pass.equals(pass1)){
 	try{
-		Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","hr","hr");
+		Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","hr","hr");
 		PreparedStatement ps = conn.prepareStatement("insert into registration values(?,?,?,?,?)");
 		ps.setString(1,name);
 		ps.setString(2,email);
